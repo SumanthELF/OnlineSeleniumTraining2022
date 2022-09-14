@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="FirefoxTest(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="account.TC_Account_003">
+        <methods>
+          <include name="browserTearDown"/>
+          <include name="logoutOfApp"/>
+          <include name="browserSetup"/>
+          <include name="deleteAccount"/>
+          <include name="loginToApp"/>
+        </methods>
+      </class> <!-- account.TC_Account_003 -->
+      <class name="account.TC_Account_004">
+        <methods>
+          <include name="browserTearDown"/>
+          <include name="logoutOfApp"/>
+          <include name="cloneAccount"/>
+          <include name="browserSetup"/>
+          <include name="loginToApp"/>
+        </methods>
+      </class> <!-- account.TC_Account_004 -->
+      <class name="account.TC_Account_002">
+        <methods>
+          <include name="browserTearDown"/>
+          <include name="modifyAccount"/>
+          <include name="logoutOfApp"/>
+          <include name="browserSetup"/>
+          <include name="loginToApp"/>
+        </methods>
+      </class> <!-- account.TC_Account_002 -->
+      <class name="account.TC_Account_001">
+        <methods>
+          <include name="browserTearDown"/>
+          <include name="logoutOfApp"/>
+          <include name="browserSetup"/>
+          <include name="createAccount"/>
+          <include name="loginToApp"/>
+        </methods>
+      </class> <!-- account.TC_Account_001 -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
